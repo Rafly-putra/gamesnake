@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7cff, #b390ff);
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#startMenu, #gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+#startMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#gameContainer {
+    display: none;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #6e7cff;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #b390ff;
+}
+
+button {
+    font-size: 16px;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #6e7cff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a6bdc;
+}
+
+button:active {
+    background-color: #4a5ac7;
+    transform: scale(0.98);
+}
+
+canvas {
+    border: 3px solid #6e7cff;
+    background-color: #f5f8ff;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#scoreDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6e7cff;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    background-color: #ff6f61;
+    margin-top: 10px;
+}
+
+#restartButton:hover {
+    background-color: #e65a50;
+}
+
+#restartButton:active {
+    background-color: #cc4e46;
+}
